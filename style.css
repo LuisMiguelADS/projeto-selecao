@@ -1,0 +1,387 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+:root {
+    --amarelo: #FFCC00;
+    --azul-fraco: #004DE1;
+    --azul-forte: #1D1772;
+    --verde: #009656;
+}
+
+header {
+    background-color: var(--amarelo);
+}
+
+.cabecalho {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 170px;
+    max-width: 1000px;
+    margin: 0 auto;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.418);
+}
+
+.cabecalho img {
+    width: 100px;
+    margin: 0px 20px;
+}
+
+.menu {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 84%;
+}
+
+.menu h1 {
+    color: var(--amarelo);
+    width: 100%;
+    text-align: center;
+    margin-top: 6px;
+    letter-spacing: 2px;
+    font-size: 3em;
+}
+
+.verde {
+    color: var(--verde);
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--azul-fraco);
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.layout {
+    width: 0; 
+    height: 0; 
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent; 
+    border-right: 50px solid var(--verde);
+    background-color: white; 
+}
+
+.itens-menu {
+    width: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.item-menu {
+    color: white;
+    font-weight: 500;
+    font-size: 1.2em;
+}
+
+.icon-menu {
+    display: none;
+}
+
+.material-symbols-outlined {
+    color: white;
+    padding-right: 30px;
+    cursor: pointer;
+}
+
+main {
+    background-color: #009656;
+    height: 100%;
+}
+
+.noticias {
+    max-width: 1000px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+    background-color: white;
+    border-top: 1px solid var(--azul-fraco);
+}
+
+.destaques {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1000px;
+    gap: 10px;
+    padding: 5px 20px 40px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid var(--azul-forte);
+    border-top: 1px solid var(--azul-forte);
+}
+
+.noticia {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.noticia h1 {
+    width: 100%;
+    margin: 10px;
+    font-size: 2.3em;
+    color: var(--azul-forte);
+}
+
+.noticia span {
+    font-size: 0.8em;
+    margin: 0px 10px;
+}
+
+.noticia h2 {
+    margin: 10px;
+}
+
+.noticia .img-not {
+    width: 80%;
+    margin: 10px auto;
+    background-color: lightgray;
+    color: black;
+}
+
+.noticia .img-not img {
+    width: 100%;
+}
+
+.noticia .img-not p {
+    font-size: 0.8em;
+    padding: 0px 2px;
+    font-weight: 500;
+}
+
+.noticia .img-not span {
+    font-size: 0.8em;
+    padding: 0px 2px;
+    margin: 0px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.noticia > p {
+    margin: 20px;
+    text-indent: 20px;
+    text-align: justify;
+}
+
+.destaques h1 {
+    display: inline;
+    width: 100%;
+    padding-bottom: 20px;
+    margin: 10px;
+    font-size: 2em;
+    color: var(--azul-forte);
+}
+
+.item-destaque {
+    flex: 1;
+    background-color: var(--azul-forte);
+    min-width: 240px;
+    color: white;
+}
+
+.img {
+    background-color: lightgray;
+    color: black;
+}
+
+.item-destaque > .img img {
+    max-width: 100%;
+}
+
+.item-destaque > .img p {
+   font-size: 0.7em;
+   padding: 0px 2px;
+   font-weight: 500;
+}
+
+.item-destaque > .img span {
+    font-size: 0.7em;
+    font-style: italic;
+    margin: 0px;
+    padding: 0px 2px;
+}
+
+.item-destaque h2 {
+    font-size: 1.5em;
+    padding: 5px;
+}
+
+.item-destaque p {
+    font-size: 1em;
+    padding: 5px;
+}
+
+.fotos-treino {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px;
+}
+
+.foto-treino {
+    flex: 1;
+    min-width: 400px;
+    background-color: lightgray;
+}
+
+.foto-treino > img {
+    width: 100%;
+}
+
+.foto-treino > p {
+    font-size: 0.8em;
+    padding: 0px 2px;
+    font-weight: 500;
+}
+
+.foto-treino > span {
+    font-size: 0.8em;
+    padding: 0px 2px;
+    margin: 0px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+footer {
+    background-color: var(--verde);
+}
+
+.email {
+    background-color: var(--azul-forte);
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px;
+    align-items: center;
+    gap: 20px;
+}
+
+.email p {
+    font-size: 1.7em;
+    font-weight: 600;
+    width: 400px;
+    text-align: center;
+}
+
+.botao {
+    background-color: #01663a;
+    width: 500px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.botao:hover {
+    background-color: var(--verde);
+}
+
+.botao input {
+    flex: 2;
+    height: 100%;
+    border: none;
+    padding: 10px;
+    font-size: 1.3em;
+}
+
+.botao label {
+    flex: 1;
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.saiba-mais {
+    background-color: var(--azul-fraco);
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px 0px;
+    align-items: flex-start;
+}
+
+.saiba-mais img {
+    height: 160px;
+    align-self: center;
+    margin: 40px;
+}
+
+.navegacao {
+    width: 135px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.navegacao .titulo {
+    font-weight: 600;
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+
+.navegacao a {
+    color: white;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+}
+
+.navegacao a:hover {
+    text-decoration: underline;
+}
+
+.footer-background {
+    background-color: var(--amarelo);
+    width: 100%;
+}
+
+.direitos {
+    background-color: white;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    color: black;
+    padding: 10px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.direitos > a {
+    font-weight: 600;
+    color: black;
+    padding: 10px 0px;
+    background-color: #004DE1;
+    width: 100px;
+    align-self: center;
+    border-radius: 5px;
+}
+
+.direitos > a:hover {
+    color: white;
+    background-color: #1D1772;
+}

@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+@media (max-width: 880px) {
+
+    .saiba-mais {
+        flex-direction: column;
+        gap: 40px;
+        padding: 50px;
+    }
+
+    .navegacao {
+        width: 300px;
+    }
+}
+
+@media (max-width: 720px) {
+    .cabecalho {
+        box-shadow: none;
+        background: linear-gradient(to bottom, #FFCC00 20%, #004DE1);
+    }
+
+    .cabecalho h1 {
+        color: #004DE1;
+        font-size: 2.5em;
+        margin-top: 15px;
+    }
+
+    .menu {
+        justify-content: space-between;
+    }
+
+    .gg-menu {
+        cursor: pointer;
+    }
+
+    .icon-menu {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 30px;
+        margin-bottom: 15px;
+    }
+
+    .material-symbols-outlined {
+        color: black;
+        cursor: pointer;
+    }
+
+    .noticia h1 {
+        margin: 10px 0px;
+    }
+
+    .noticia .img-not {
+        width: 95%;
+    }
+
+    .layout {
+        display: none;
+    }
+
+    #search-menu {
+        display: none;
+    }
+
+    .nav-menu{
+        position: fixed;
+        right: -105%;
+        top: 170px;
+        height: 340px;
+        transition: 0.5s;
+    }
+
+    .itens-menu {
+        flex-direction: column;
+        width: 100vw;
+        margin: 0px;
+    }
+
+    .item-menu {
+        padding: 30px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .item-menu:hover {
+        background-color: #1D1772;
+    }
+
+    .nav-menu.ativo{
+        right: -0%;
+    }
+}
